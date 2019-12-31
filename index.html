@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">GrowItems</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="resetFile()">Reset</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="content">
+        <div class="load-file col-6 mx-auto">
+          <div class="load-text">
+            No items.dat file selected!
+          </div>
+          <button type="button" class="load-btn btn btn-outline-primary btn-lg btn-block" onclick="getFile()">Select file...</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script src="./index.js"></script>
+    <script src="./itemutils/utils.js"></script>
+  </body>
+</html>
